@@ -1,0 +1,16 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(circle, #C77C37 0%, #C77C37 100%);
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}

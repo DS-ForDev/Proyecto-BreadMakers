@@ -1,0 +1,4 @@
+.bg-customm {
+    background-image: url("../assets/img/fondofinal1.webp"); /* Cambia la ruta según la ubicación de tu imagen */
+    background-size: cover;
+  }

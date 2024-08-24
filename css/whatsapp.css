@@ -1,0 +1,36 @@
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px; /* Cambia esto según tu preferencia */
+    right: 50px; /* Cambia esto según tu preferencia */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    transition: all 0.3s ease; /* Agrega una transición suave */
+}
+
+.whatsapp-icon img {
+    width: 60px; /* Ajusta el tamaño según tu diseño */
+    height: 60px; /* Ajusta el tamaño según tu diseño */
+}
+
+/* Agrega un estilo cuando se hace hover sobre el ícono */
+.whatsapp-icon:hover {
+    transform: scale(1.1); /* Escala ligeramente el ícono al hacer hover */
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  z-index: 1000;
+  animation: pulse 1s infinite alternate; /* Aplica la animación 'pulse' de forma infinita */
+}
