@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
       events: 'listar_evento.php',
 
       eventClick: function(info){
+        
       const visualizarModal  = new bootstrap.Modal(document.getElementById("visualizarModal"));
 
       document.getElementById("visualizar_id").innerText = info.event.id;
@@ -46,6 +47,12 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById("visualizar_start").innerText = info.event.start.toLocaleString();
       document.getElementById("visualizar_end").innerText = info.event.end !== null ? info.event.end.
       toLocaleString() : info.event.start.toLocaleString();
+
+      document.getElementById("edit_id").value = info.event.id;
+      document.getElementById("edit_title").value = info.event.title;
+      document.getElementById("edit_start").value = converterData(info.event.start);
+      document.getElementById("edit_end").value = info.event.end !== null ? converterData(info.event.end) : converterData(info.event.start);
+
 
       visualizarModal.show();
       },
@@ -141,5 +148,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('msg').innerHTML = "";
       }, 6000)
     }
+
 
   });
